@@ -10,20 +10,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // Application name
       title: 'Flutter Hello World',
+      debugShowCheckedModeBanner: false,
       // Application theme data, you can set the colors for the application as
       // you want
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
       // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Mi primera aplicación Flutter'),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
   final String title;
-  const MyHomePage({super.key, required this.title});  
+  const MyHomePage({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
